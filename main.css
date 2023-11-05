@@ -1,0 +1,118 @@
+:root{
+    --main-color:rgb(0, 13, 87);
+    --main-color-ligth:rgba(41, 128, 185,0.2);
+    --accent-color:rgba(243, 156, 18,1.0);
+    --accent-color-ligth:rgba(243, 156, 18,0.5);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to bottom right, var(--main-color), var(--main-color-ligth));
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+html::-webkit-scrollbar{
+    width: 0.4rem;
+    background-color: white;
+}
+.main-title{
+    font-size: 2rem;
+    color: white;
+}
+
+.header, .gorev-form{
+    min-height: 20vh;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-item{
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border: none;
+    background-color: white;
+    outline: none;
+}
+.btn-gorev-ekle{
+    color: var(--accent-color);
+    cursor: pointer;
+}
+.btn-gorev-ekle:hover{
+    color: white;
+    background-color: var(--accent-color);
+}
+
+/* .gorev-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.gorev-listesi{
+    list-style: none;
+    min-width: 40%;
+}
+.scroll-container{
+    background-color: var(--main-color), var(--main-color-ligth);
+    position: relative;
+    left: 400px;
+    width: 40%;
+    height: 300px;
+    overflow: auto;
+}
+.scroll-container::-webkit-scrollbar{
+    width: 0.6rem;
+    background-color: white;
+}
+.scroll-container::-webkit-scrollbar-track{
+   background-color: rgb(107, 150, 238);
+}
+.scroll-container::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: whitesmoke;
+}
+.gorev-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0.5rem;
+    font-size: 1.2rem;
+    background-color: white;
+    transition: 0.5s ease-in-out;
+}
+
+.gorev-tanim{
+    flex: 1;
+    padding: .7rem;
+    overflow-wrap: break-word;
+    word-break: break-all;
+}
+.gorev-btn{
+    background-color: var(--accent-color);
+    outline: none;
+    border: none;font-size: 1.2rem;
+    padding: 1rem;
+}
+.gorev-btn-sil{
+    background-color: rgb(228, 54, 54);
+}
+.gorev-tamamlandi{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+
+.far{
+    pointer-events: none;
+}
+
+.kaybol{
+    transform: scale(0);
+}
